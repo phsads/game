@@ -6,19 +6,18 @@
 	<title>hi</title>
 </head>
 <body onclick="rick()">
-	<video width="320" height="280" id="vid" hidden>
-                <source src="shh.mp4" type="video/mp4">
-	        whoops
-	</video>
 	<div>You have <span id="cookies">0</span> cookies</div>
 	<button onclick="gainCookies()">Click to gain cookies</button>
 	<div id="rick"></div>
+	<video width="900" height="600" id="vid" hidden>
+                <source src="shh.mp4" type="video/mp4">
+	        whoops
+	</video>
 </body>
 <script>
 var video = document.getElementById("vid")
 function gainCookies() {
 	document.getElementById("cookies").textContent = (document.getElementById("cookies").textContent*1+1)*2
-        document.getElementById("rick").textContent = "The power of Never gonna give you up multiples your cookies by 2x per click"       
 	video.play()
 	video.hidden = false
 }
